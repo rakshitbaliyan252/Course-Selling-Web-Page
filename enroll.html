@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+        .course-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .course-item button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .course-item button:hover {
+            background-color: #0056b3;
+        }
+        .login-page {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-page a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .login-page a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Course Enrollment</h1>
+        <ul class="course-list">
+            <li class="course-item">
+                <span>Course 1: Web Development</span>
+                <button onclick="enroll('Web Development')">Enroll</button>
+            </li>
+            <li class="course-item">
+                <span>Course 2: Data Science</span>
+                <button onclick="enroll('Data Science')">Enroll</button>
+            </li>
+            <li class="course-item">
+                <span>Course 3: Machine Learning</span>
+                <button onclick="enroll('Machine Learning')">Enroll</button>
+            </li>
+            <li class="course-item">
+                <span>Course 4: Graphic Design</span>
+                <button onclick="enroll('Graphic Design')">Enroll</button>
+            </li>
+        </ul>
+        <div class="login-page">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function enroll(courseName) {
+            alert(`You have successfully enrolled in ${courseName}!`);
+        }
+    </script>
+</body>
+</html>
